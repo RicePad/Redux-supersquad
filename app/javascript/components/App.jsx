@@ -4,11 +4,13 @@ import HeroesList from './HeroesList';
 
 
 
+
+
 class App extends Component {
 
 	render(){
 		return(
-			<div className="app-component-title">
+			<div className="App">
 				<h1>SuperSquad</h1>
 				<CharacterList />
 				<HeroesList />
