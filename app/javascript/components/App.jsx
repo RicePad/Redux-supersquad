@@ -1,5 +1,6 @@
 import React, { Component } from 'react';
 import CharacterList from './CharacterList';
+import HeroesList from './HeroesList';
 
 
 
@@ -10,6 +11,7 @@ class App extends Component {
 			<div className="app-component-title">
 				<h1>SuperSquad</h1>
 				<CharacterList />
+				<HeroesList />
 
 			</div>
 			)

@@ -5,14 +5,18 @@ import { addCharacterById } from '../actions'
 class CharacterList extends Component {
 
 	renderListCharacters(){
+		let characters = this.props.characters
 		return(
 			<div>
 				<ul>
 					{
-						this.props.characters.map(character => {
+						characters.map(character => {
 							return(
 								<li key={character.id}>
-									<div>{character.name}</div>
+									<div>
+										{character.name}
+										<button onClick={() => this.props.addCharacterById(character.id)}> + </button>
+									</div>
 								</li>
 								)
 						})
