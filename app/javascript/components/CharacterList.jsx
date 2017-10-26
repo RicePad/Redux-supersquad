@@ -41,8 +41,7 @@ class CharacterList extends Component {
 
 function mapStateToProps(state){
 	return {
-		characters: state.characters,
-		heroes: state.heroes
+		characters: state.characters
 	}
 }
 
