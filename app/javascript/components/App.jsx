@@ -12,8 +12,16 @@ class App extends Component {
 		return(
 			<div className="App">
 				<h1>SuperSquad</h1>
-				<CharacterList />
-				<HeroesList />
+				
+				<div class="row">
+					<div className="col-md-6">
+	          			<CharacterList />
+	        		</div>
+					
+					<div className="col-md-6">
+						<HeroesList />
+					</div>
+				</div>
 
 			</div>
 			)
