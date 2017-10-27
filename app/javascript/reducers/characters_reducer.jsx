@@ -8,11 +8,19 @@ function characters(state = characters_json, action){
 			let characters = state.filter(item => item.id !== action.id);
 			return characters
 		case REMOVE_CHARACTER:
+			characters = [...state, createCharacter(action.id)];
+			return characters
 			
 		default: 
 			return state;
 	}
 
 }
+
+function createCharacter(id){
+	let character = characters_json.find(c => c.id === id);
+	return character
+}
+
 
 export default characters;

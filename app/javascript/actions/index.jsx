@@ -15,4 +15,6 @@ export function removeCharacterById(id){
 		type: REMOVE_CHARACTER,
 		id
 	}
+
+	return action
 }
