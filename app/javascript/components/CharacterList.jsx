@@ -31,7 +31,7 @@ class CharacterList extends Component {
 
 		return(
 			<div>
-				<h1>Character List</h1>
+				<h2>Character List</h2>
 				{this.renderListCharacters()}
 			</div>
 			)
